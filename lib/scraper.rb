@@ -21,6 +21,7 @@ class Scraper
       student_hash = {}
       links = doc.css(".social-icon-container").children.css("a")
       links.each do |link|
+      link = link.attribute("href").value
         binding.pry
       end
       student_hash
