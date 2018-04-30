@@ -20,6 +20,7 @@ class Scraper
       doc = Nokogiri::HTML(open(profile_url))
       student_hash = {}
       doc.css(".social-icon-container")
+      student_hash
     end
 
 
